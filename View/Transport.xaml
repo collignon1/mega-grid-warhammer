@@ -1,0 +1,83 @@
+﻿<UserControl x:Class="mega_grid_warhammer.View.Transport"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:mega_grid_warhammer.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="480" d:DesignWidth="800">
+    <Grid Background="LightGray">
+        <Grid.RowDefinitions>
+            <RowDefinition Name="RW_weapons" Height="*"/>
+            <RowDefinition Name="RW_keyword" Height="70"/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="580"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" Name="GridWeapons">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="100"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="1" Name="GridWeapon">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="8*"/>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="3*"/>
+
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition x:Name="RW_RangeKeyword" Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition x:Name="RW_MeleeKeyword"  Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Content="A" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Grid.Row="0" Grid.Column="1"/>
+                    <Label Content="CT" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Grid.Row="0" Grid.Column="2"/>
+                    <Label Content="F" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Grid.Row="0" Grid.Column="3"/>
+                    <Label Content="PA" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Grid.Row="0" Grid.Column="4"/>
+                    <Label Content="D" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Grid.Row="0" Grid.Column="5"/>
+                    
+                    <Label Content="A" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Grid.Row="3" Grid.Column="1"/>
+                    <Label Content="CC" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Grid.Row="3" Grid.Column="2"/>
+                    <Label Content="F" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Grid.Row="3" Grid.Column="3"/>
+                    <Label Content="PA" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Grid.Row="3" Grid.Column="4"/>
+                    <Label Content="D" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Grid.Row="3" Grid.Column="5"/>
+                </Grid>
+                
+                <Grid Name="Grid_dammaged_lead_unitcomp" Grid.Row="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition x:Name="RW_UnitComposition" Height="*"/>
+                        <RowDefinition x:Name="RW_Dammaged" Height="*"/>
+                    </Grid.RowDefinitions>
+                </Grid>
+            </Grid>
+            <Grid x:Name="Grid_Abilities_transport" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition x:Name="transport" Height="30"/>
+                    <RowDefinition x:Name="transport_Text" Height="80"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" Name="abilities2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+                <Grid Grid.Row="2" Background="#005d66">
+                    
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>
