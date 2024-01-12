@@ -105,8 +105,8 @@
                     <RowDefinition Height="40"/>
                     <RowDefinition Height="40"/>
                     <RowDefinition Height="*"/>
-                    <RowDefinition x:Name="transport" Height="40"/>
-                    <RowDefinition x:Name="transport_Text" Height="80"/>
+                    <RowDefinition x:Name="lead" Height="40"/>
+                    <RowDefinition x:Name="lead_Text" Height="80"/>
 
                 </Grid.RowDefinitions>
                 <Grid Grid.Row="0" Background="#005d66">
