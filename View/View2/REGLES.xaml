@@ -16,18 +16,59 @@
                 <RowDefinition Height="40"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Content="Cult of Magic" FontSize="22"/>
+                <Label Content="si votre faction est Thousand Sons, vous pouvez utiliser cette règle de détachement" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label Content="Kindred Sorcery" FontSize="18"/>
+                <Label Content="Dans votre phase de commandement, vous pouvez sélectionner l'une des capacités énumérées ci-dessous pour " Grid.Row="1" FontSize="16"/>
+                <Label Content="prendre effet jusqu'au début de votre prochaine Phase de commandement" Grid.Row="2" FontSize="16"/>
+            </Grid>
         </Grid>
         <Grid Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="40"/>
                 <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
-
             </Grid.ColumnDefinitions>
+            <Label Content="malevolant charge" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="18"/>
+            <Label Content="Armes psychiques équipées par un" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="14" Grid.Row="1" Grid.Column="0"/>
+            <Label Content="personnage Thousand Sons de votre" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="14" Grid.Row="2" Grid.Column="0"/>
+            <Label Content="armée à la capacité [touche critique]" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="14" Grid.Row="3" Grid.Column="0"/>
+
+
+            <Label Content="psychic maelstrom" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="18" Grid.Column="1"/>
+            <Label Content="Armes psychiques équipées par figurine" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="14" Grid.Row="1" Grid.Column="1"/>
+            <Label Content="Thousand Sons de votre armée a la " HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="14" Grid.Row="2" Grid.Column="1"/>
+            <Label Content="Capacité [touche soutenue 1]." HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="14" Grid.Row="3" Grid.Column="1"/>
+
+            <Label Content="temporal surge" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="18" Grid.Column="2"/>
+            <Label Content="Armes psychiques équipées par figurine " HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="14" Grid.Row="1" Grid.Column="2"/>
+            <Label Content="Thousand Sons de votre armée ont la " HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="14" Grid.Row="2" Grid.Column="2"/>
+            <Label Content="Capacité [blessure dévastatrice]." HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="14" Grid.Row="3" Grid.Column="2"/>
         </Grid>
     </Grid>
 </UserControl>

@@ -75,9 +75,6 @@
     <Compile Include="View\View2\REGLES.xaml.cs">
       <DependentUpon>REGLES.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\View2\strata.xaml.cs">
-      <DependentUpon>strata.xaml</DependentUpon>
-    </Compile>
     <Compile Include="View\wargear_abilities.xaml.cs">
       <DependentUpon>wargear_abilities.xaml</DependentUpon>
     </Compile>
@@ -126,10 +123,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\View2\REGLES.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\View2\strata.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
