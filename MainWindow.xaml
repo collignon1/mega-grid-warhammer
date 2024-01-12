@@ -28,7 +28,7 @@
                     <ComboBox Name="CB_persos" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80" SelectionChanged="CB_persos_SelectionChanged"/>
                 </Grid>
                 <Grid Grid.Row="1">
-                    <Button Name="CB_army_rules" Content="règles d'armée" HorizontalAlignment="center" VerticalAlignment="Center" FontSize="20" Background="LightGray"/>
+                    <Button Name="BT_army_rules" Content="règles d'armée" HorizontalAlignment="center" VerticalAlignment="Center" FontSize="20" Background="LightGray" Click="CB_army_rules_Click"/>
                 </Grid>
             </Grid>
             <Grid Grid.Column="1" Name="Grid_stats">
@@ -62,6 +62,6 @@
 
             </Grid>
         </Grid>
-        
+        <Grid Grid.Row="1" Name="affichage"/>
     </Grid>
 </Window>

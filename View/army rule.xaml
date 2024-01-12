@@ -17,10 +17,11 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Button x:Name="BTN_cabal" Content="cabale des sorciers" HorizontalAlignment="Center" FontSize="20" VerticalAlignment="Center" Grid.Column="0"/>
-            <Button x:Name="BTN_detachement_rule" Content="règles de détachement" HorizontalAlignment="Center" FontSize="20" VerticalAlignment="Center" Grid.Column="1"/>
-            <Button x:Name="BTN_detachement_enhancement" Content="enhancement" HorizontalAlignment="Center" FontSize="20" VerticalAlignment="Center" Grid.Column="2"/>
+            <Button x:Name="BTN_cabal" Content="cabale des sorciers" HorizontalAlignment="Center" FontSize="20" Click="BTN_cabal_Click"/>
+            <Button x:Name="BTN_detachement_rule" Content="règles de détachement" HorizontalAlignment="Center" FontSize="20" VerticalAlignment="Top" Grid.Column="1" Click="BTN_detachement_rule_Click"/>
+            <Button x:Name="BTN_detachement_enhancement" Content="enhancement" HorizontalAlignment="Center" FontSize="20" VerticalAlignment="Center" Grid.Column="2" Click="BTN_detachement_enhancement_Click"/>
 
         </Grid>
+        <Grid Grid.Row="1" Name="affichage2"/>
     </Grid>
 </UserControl>

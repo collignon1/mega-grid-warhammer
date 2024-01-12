@@ -1,4 +1,5 @@
-﻿using System;
+﻿using mega_grid_warhammer.View;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,6 +29,13 @@ namespace mega_grid_warhammer
         private void CB_persos_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             ///fuauf
+        }
+
+        private void BT_army_rules_Click(object sender, RoutedEventArgs e)
+        {
+            affichage.Children.Clear();
+            army_rule army_Rule = new army_rule();
+            affichage.Children.Add(army_Rule);
         }
     }
 }

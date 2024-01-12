@@ -1,4 +1,5 @@
-﻿using System;
+﻿using mega_grid_warhammer.View.View2;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,25 @@ namespace mega_grid_warhammer.View
         public army_rule()
         {
             InitializeComponent();
+        }
+
+        private void BTN_cabal_Click(object sender, RoutedEventArgs e)
+        {
+            affichage2.Children.Clear();
+            cabale Cabale = new cabale();
+            affichage.Children.Add(Cabale);
+        }
+
+        private void BTN_detachement_rule_Click(object sender, RoutedEventArgs e)
+        {
+            affichage2.Children.Clear();
+            REGLES regles = new REGLES();
+            affichage.Children.Add(regles);
+        }
+
+        private void BTN_detachement_enhancement_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

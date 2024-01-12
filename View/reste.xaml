@@ -121,8 +121,7 @@
                     <TextBox Name="TB_core" FontSize="14" Background="LightGray" Grid.Column="1"/>
                 </Grid>
                 <TextBox Name="TB_abilities" TextWrapping="Wrap" FontSize="14" Background="LightGray" Grid.Row="2"/>
-                <Grid Grid.Row="3" Background="#005d66">
-
+            </Grid>
         </Grid>
         <Grid Grid.Row="1">
             <TextBox Name="TB_KEYWORD" FontSize="16" TextWrapping="Wrap" Background="LightGray"/>
