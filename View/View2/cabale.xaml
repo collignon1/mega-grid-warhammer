@@ -15,7 +15,12 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="40"/>
                 <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
+            <Label Content="cabale des sorciers" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="14"/>
+            <Label Content="certaines unités peuvent produires des points de cabale, seuls les psyker peuvent utilisés ces points en échange des compétences" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="14" Grid.Row="1" Grid.Column="0"/>
+            <Label Content="ces compétences sont psychiques" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="14" Grid.Row="2" Grid.Column="0"/>
+
         </Grid>
         <Grid Grid.Row="1">
             <Grid.RowDefinitions>
@@ -61,37 +66,32 @@
 
             <Label Content="echoes of the warp" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="14" Grid.Column="1"/>
             <Label Content="6 points de cabale" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="14" Grid.Row="1" Grid.Column="1"/>
-            <Label Content="weaver of fates" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="14" Grid.Row="2" Grid.Column="1"/>
+            <Label Content="Utilisez ce rituel au début de " HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="2" Grid.Column="1"/>
             
-            <Label Content="n’importe quelle phase. Une" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="3" Grid.Column="0"/>
-            <Label Content="fois pendant cette phase, " HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="4" Grid.Column="0"/>
-            <Label Content="lorsqu'un jet de sauvegarde" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="5" Grid.Column="0"/>
-            <Label Content="échoue pour un Modèle " HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="6" Grid.Column="0"/>
-            <Label Content="Thousand Sons allié dont" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="7" Grid.Column="0"/>
-            <Label Content="l'unité est à moins de 18'' de " HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="8" Grid.Column="0"/>
-            <Label Content="ce Psyker, vous pouvez " HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="9" Grid.Column="0"/>
-            <Label Content="relancer ce jet de " HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="10" Grid.Column="0"/>
-            <Label Content="Sauvegarde." HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="11" Grid.Column="0"/>
-            <Label Content="relancer ce jet de " HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="12" Grid.Column="0"/>
-            <Label Content="Sauvegarde." HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="13" Grid.Column="0"/>
-            <Label Content="Sauvegarde." HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="14" Grid.Column="0"/>
+            <Label Content="n’importe quelle phase. Une" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="3" Grid.Column="1"/>
+            <Label Content="fois dans la phase, vous" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="4" Grid.Column="1"/>
+            <Label Content="pouvez sélectionner un unité" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="5" Grid.Column="1"/>
+            <Label Content="Psyker comme cible d'un " HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="6" Grid.Column="1"/>
+            <Label Content="Stratagème pour 0CP, même" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="7" Grid.Column="1"/>
+            <Label Content="si vous avez déjà utilisé ce" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="8" Grid.Column="1"/>
+            <Label Content="stratagème à cette phase" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="9" Grid.Column="1"/>
 
             <Label Content="temporal surge" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="14" Grid.Column="2"/>
             <Label Content="5 points de cabale" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="14" Grid.Row="1" Grid.Column="2"/>
-            <Label Content="weaver of fates" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="14" Grid.Row="2" Grid.Column="2"/>
+            <Label Content="Utilisez ce rituel au début de" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="2" Grid.Column="2"/>
 
-            <Label Content="n’importe quelle phase. Une" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="3" Grid.Column="2"/>
-            <Label Content="fois pendant cette phase, " HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="4" Grid.Column="2"/>
-            <Label Content="lorsqu'un jet de sauvegarde" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="5" Grid.Column="2"/>
-            <Label Content="échoue pour un Modèle " HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="6" Grid.Column="2"/>
-            <Label Content="Thousand Sons allié dont" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="7" Grid.Column="2"/>
-            <Label Content="l'unité est à moins de 18'' de " HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="8" Grid.Column="2"/>
-            <Label Content="ce Psyker, vous pouvez " HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="9" Grid.Column="2"/>
-            <Label Content="relancer ce jet de " HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="10" Grid.Column="2"/>
-            <Label Content="Sauvegarde." HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="11" Grid.Column="2"/>
-            <Label Content="relancer ce jet de " HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="12" Grid.Column="2"/>
-            <Label Content="Sauvegarde." HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="13" Grid.Column="2"/>
-            <Label Content="Sauvegarde." HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="14" Grid.Column="2"/>
+            <Label Content="votre phase de Tir" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="3" Grid.Column="2"/>
+            <Label Content="Sélectionnez une unité" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="4" Grid.Column="2"/>
+            <Label Content="Thousand Sons amie dans un" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="5" Grid.Column="2"/>
+            <Label Content="rayon de 18’’ de ce Psyker ; " HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="6" Grid.Column="2"/>
+            <Label Content="sauf si cette unité est dans" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="7" Grid.Column="2"/>
+            <Label Content="la portée d’engagement d'une" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="8" Grid.Column="2"/>
+            <Label Content="ou plusieurs unités ennemies," HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="9" Grid.Column="2"/>
+            <Label Content="il peut effectuer" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="10" Grid.Column="2"/>
+            <Label Content="un mouvement normal. Si c'est " HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="11" Grid.Column="2"/>
+            <Label Content="le cas, cette unité n'est pas" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="12" Grid.Column="2"/>
+            <Label Content="éligible à déclarer une charge" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="13" Grid.Column="2"/>
+            <Label Content="ce tour-ci" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="11" Grid.Row="14" Grid.Column="2"/>
             
             <Label Content="doombolt" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="14" Grid.Column="3"/>
             <Label Content="7 points de cabale" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#005d66" FontSize="14" Grid.Row="1" Grid.Column="3"/>
