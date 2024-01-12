@@ -37,6 +37,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -55,11 +57,26 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="View\army rule.xaml.cs">
+      <DependentUpon>army rule.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\lead.xaml.cs">
       <DependentUpon>lead.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\reste.xaml.cs">
       <DependentUpon>reste.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\View2\cabale.xaml.cs">
+      <DependentUpon>cabale.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\View2\crimson_king.xaml.cs">
+      <DependentUpon>crimson_king.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\View2\REGLES.xaml.cs">
+      <DependentUpon>REGLES.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\View2\strata.xaml.cs">
+      <DependentUpon>strata.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\wargear_abilities.xaml.cs">
       <DependentUpon>wargear_abilities.xaml</DependentUpon>
@@ -76,6 +93,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="View\army rule.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\damaged.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -93,6 +114,22 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Transport.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\View2\cabale.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\View2\crimson_king.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\View2\REGLES.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\View2\strata.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

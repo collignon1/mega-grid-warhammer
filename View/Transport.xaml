@@ -7,6 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="480" d:DesignWidth="800">
     <Grid Background="LightGray">
+
         <Grid.RowDefinitions>
             <RowDefinition Name="RW_weapons" Height="*"/>
             <RowDefinition Name="RW_keyword" Height="70"/>
@@ -22,6 +23,13 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="100"/>
                 </Grid.RowDefinitions>
+                <Grid Grid.Row="0" Name="invulnérable" Background="#005d66">
+                    <Label Content="Sauvegarde Invulnérable :" HorizontalAlignment="Left" FontSize="22" Foreground="LightGray"/>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="260"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
                 <Grid Grid.Row="1" Name="GridWeapon">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="8*"/>
@@ -30,31 +38,58 @@
                         <ColumnDefinition Width="3*"/>
                         <ColumnDefinition Width="3*"/>
                         <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="3*"/>
 
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="40"/>
                         <RowDefinition Height="*"/>
                         <RowDefinition x:Name="RW_RangeKeyword" Height="*"/>
-                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="40"/>
                         <RowDefinition Height="*"/>
                         <RowDefinition x:Name="RW_MeleeKeyword"  Height="*"/>
                     </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" Grid.ColumnSpan="7" Name="tir" Background="#005d66"/>
+                    <Label Content="RANGE WEAPONS" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Foreground="LightGray" Grid.Column="0"/>
+                    <Label Content="RANGE" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Foreground="LightGray" Grid.Column="1"/>
+                    <Label Content="A" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Foreground="LightGray" Grid.Column="2"/>
+                    <Label Content="CT" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Foreground="LightGray" Grid.Column="3"/>
+                    <Label Content="F" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Foreground="LightGray" Grid.Column="4"/>
+                    <Label Content="PA" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Foreground="LightGray" Grid.Column="5"/>
+                    <Label Content="D" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Foreground="LightGray" Grid.Column="6"/>
 
-                    <Label Content="A" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Grid.Row="0" Grid.Column="1"/>
-                    <Label Content="CT" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Grid.Row="0" Grid.Column="2"/>
-                    <Label Content="F" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Grid.Row="0" Grid.Column="3"/>
-                    <Label Content="PA" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Grid.Row="0" Grid.Column="4"/>
-                    <Label Content="D" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Grid.Row="0" Grid.Column="5"/>
-                    
-                    <Label Content="A" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Grid.Row="3" Grid.Column="1"/>
-                    <Label Content="CC" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Grid.Row="3" Grid.Column="2"/>
-                    <Label Content="F" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Grid.Row="3" Grid.Column="3"/>
-                    <Label Content="PA" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Grid.Row="3" Grid.Column="4"/>
-                    <Label Content="D" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Grid.Row="3" Grid.Column="5"/>
+                    <Grid Grid.Row="3" Grid.ColumnSpan="7" Name="close_combat" Background="#005d66"/>
+                    <Label Content="MELEE WEAPONS" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="3" FontSize="18" Foreground="LightGray" Grid.Column="0"/>
+                    <Label Content="RANGE" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Grid.Row="3" Foreground="LightGray" Grid.Column="1"/>
+                    <Label Content="A" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Grid.Row="3" Foreground="LightGray" Grid.Column="2"/>
+                    <Label Content="CC" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Grid.Row="3" Foreground="LightGray" Grid.Column="3"/>
+                    <Label Content="F" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Grid.Row="3" Foreground="LightGray" Grid.Column="4"/>
+                    <Label Content="PA" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Grid.Row="3" Foreground="LightGray" Grid.Column="5"/>
+                    <Label Content="D" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Grid.Row="3" Foreground="LightGray" Grid.Column="6"/>
+
+                    <ComboBox Name="CB_RANGE" Grid.Row="1"/>
+                    <TextBox x:Name="TB_R_range" Grid.Row="1" Grid.Column="1" Background="LightGray"/>
+                    <TextBox x:Name="TB_R_A" Grid.Row="1" Grid.Column="2" Background="LightGray"/>
+                    <TextBox x:Name="TB_R_CT" Grid.Row="1" Grid.Column="3" Background="LightGray"/>
+                    <TextBox x:Name="TB_R_F" Grid.Row="1" Grid.Column="4" Background="LightGray"/>
+                    <TextBox x:Name="TB_R_PA" Grid.Row="1" Grid.Column="5" Background="LightGray"/>
+                    <TextBox x:Name="TB_R_D" Grid.Row="1" Grid.Column="6" Background="LightGray"/>
+
+                    <TextBox x:Name="TB_RANGE_KEY" Grid.Row="2" Grid.ColumnSpan="7" Background="LightGray"/>
+
+                    <ComboBox Name="CB_MELEE" Grid.Row="4"/>
+                    <TextBox x:Name="TB_M_range" Grid.Row="4" Grid.Column="1" Background="LightGray"/>
+                    <TextBox x:Name="TB_M_A" Grid.Row="4" Grid.Column="2" Background="LightGray"/>
+                    <TextBox x:Name="TB_M_CT" Grid.Row="4" Grid.Column="3" Background="LightGray"/>
+                    <TextBox x:Name="TB_M_F" Grid.Row="4" Grid.Column="4" Background="LightGray"/>
+                    <TextBox x:Name="TB_M_PA" Grid.Row="4" Grid.Column="5" Background="LightGray"/>
+                    <TextBox x:Name="TB_M_D" Grid.Row="4" Grid.Column="6" Background="LightGray"/>
+
+                    <TextBox x:Name="TB_MELEE_KEY" Grid.Row="5" Grid.ColumnSpan="7" Background="LightGray"/>
+
                 </Grid>
                 
-                <Grid Name="Grid_dammaged_lead_unitcomp" Grid.Row="2">
+                <Grid Name="Grid_dammaged_unitcomp" Grid.Row="2">
                     <Grid.RowDefinitions>
                         <RowDefinition x:Name="RW_UnitComposition" Height="*"/>
                         <RowDefinition x:Name="RW_Dammaged" Height="*"/>
@@ -64,18 +99,30 @@
             <Grid x:Name="Grid_Abilities_transport" Grid.Column="1">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
                     <RowDefinition Height="*"/>
-                    <RowDefinition x:Name="transport" Height="30"/>
+                    <RowDefinition x:Name="transport" Height="40"/>
                     <RowDefinition x:Name="transport_Text" Height="80"/>
+                    <RowDefinition x:Name="damaged" Height="40"/>
+                    <RowDefinition x:Name="damaged_Text" Height="75"/>
                 </Grid.RowDefinitions>
-                <Grid Grid.Row="0" Name="abilities2">
+                <Grid Grid.Row="0" Background="#005d66">
+                    <Label Content="Abilities" HorizontalAlignment="Left" FontSize="22" Foreground="LightGray"/>
+                </Grid>
+                <Grid Grid.Row="1" Name="abilities2">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="2*"/>
                     </Grid.ColumnDefinitions>
+                    <Grid Grid.Row="0">
+                        <Label Content="Core :" HorizontalAlignment="Left" FontSize="22" Foreground="Black"/>
+                    </Grid>
                 </Grid>
-                <Grid Grid.Row="2" Background="#005d66">
-                    
+                <Grid Grid.Row="3" Background="#005d66">
+                    <Label Content="TRANSPORT" HorizontalAlignment="Left" FontSize="22" Foreground="LightGray"/>
+                </Grid>
+                <Grid Grid.Row="5" Background="#005d66">
+                    <Label Content="DAMAGED" HorizontalAlignment="Left" FontSize="22" Foreground="LightGray"/>
                 </Grid>
             </Grid>
         </Grid>

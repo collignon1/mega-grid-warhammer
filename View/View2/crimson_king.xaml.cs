@@ -13,21 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace mega_grid_warhammer
+namespace mega_grid_warhammer.View.View2
 {
     /// <summary>
-    /// Logique d'interaction pour MainWindow.xaml
+    /// Logique d'interaction pour crimson_king.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class crimson_king : UserControl
     {
-        public MainWindow()
+        public crimson_king()
         {
-            InitializeComponent(); 
-        }
-
-        private void CB_persos_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
+            InitializeComponent();
         }
     }
 }

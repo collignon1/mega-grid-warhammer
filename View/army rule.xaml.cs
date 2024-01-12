@@ -13,21 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace mega_grid_warhammer
+namespace mega_grid_warhammer.View
 {
     /// <summary>
-    /// Logique d'interaction pour MainWindow.xaml
+    /// Logique d'interaction pour army_rule.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class army_rule : UserControl
     {
-        public MainWindow()
+        public army_rule()
         {
-            InitializeComponent(); 
-        }
-
-        private void CB_persos_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
+            InitializeComponent();
         }
     }
 }
