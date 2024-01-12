@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:mega_grid_warhammer"
         mc:Ignorable="d"
         Title="MainWindow" Height="650" Width="800">
+    
     <Grid Background="Black">
         <Grid.RowDefinitions>
             <RowDefinition Height="170"/>

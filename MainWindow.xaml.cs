@@ -27,7 +27,7 @@ namespace mega_grid_warhammer
 
         private void CB_persos_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            ///fuauf
         }
     }
 }
